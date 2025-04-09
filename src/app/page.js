@@ -1,5 +1,6 @@
 'use client'
 import Context, { userContext } from '@/components/Context'
+import Navbar from '@/components/Navbar'
 import React, { useContext } from 'react'
 
 const Page = () => {
@@ -7,6 +8,7 @@ const Page = () => {
   console.log(user)
   return (
     <div>
+      <Navbar/>
       {user.map((item)=>
         <div key={item.id}>
             <h1>{item.name}</h1>
